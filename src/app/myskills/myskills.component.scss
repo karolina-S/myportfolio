@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+}
+.section {
+  width: 50vw;
+}
+
+.skills {
+  &__group {
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  &__items {
+    text-align: center;
+  }
+  &__item {
+    display: inline-block;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    min-width: 4rem;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);
+    background: linear-gradient(to left, #6dd5ed, #2193b0);
+    -webkit-box-shadow: 0px 0px 0.5rem 0px #6dd5ed;
+    -moz-box-shadow: 0px 0px 0.5rem 0px #6dd5ed;
+    box-shadow: 0px 0px 0.5rem 0px #6dd5ed;
+    transition: 0.5s;
+    cursor: default;
+    &:hover {
+      -webkit-box-shadow: 0px 0px 0.7rem 0.2rem #6dd5ed;
+      -moz-box-shadow: 0px 0px 0.7rem 0.2rem #6dd5ed;
+      box-shadow: 0px 0px 0.7rem 0.2rem #6dd5ed;
+    }
+  }
+  &__section {
+    width: 50vw;
+  }
+}
+
+.edu {
+  &__group {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    color: #6dd5ed;
+    font-weight: bold;
+  }
+  &__item {
+    list-style-type: none;
+    font-size: 1.1rem;
+    &:nth-child(3) {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.more {
+  &__container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    & i {
+      font-size: 2rem;
+      padding: 1rem;
+      transition: 0.5s;
+      cursor: pointer;
+      text-align: center;
+      background: #2193b0;
+      background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);
+      background: linear-gradient(to left, #6dd5ed, #2193b0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      letter-spacing: 0.1rem;
+      text-shadow: 0px 0px 0 #6dd5ed;
+      &:hover {
+        text-shadow: 0px 0px 2rem #6dd5ed;
+      }
+    }
+  }
+  &__items {
+    margin: 2rem;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .section {
+    width: 100vw;
+    padding: 1rem;
+  }
+
+  .skills {
+    &__item {
+      min-width: 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+}

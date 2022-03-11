@@ -1,0 +1,29 @@
+<button class="navbar__burger" (click)="toggleMenu()">
+  <i class="fa-solid fa-bars"></i>
+</button>
+
+<ul class="navbar" [ngClass]="isClicked ? 'navbar__show' : 'navbar__hide'">
+  <li>
+    <a class="navbar__link" routerLink="/home" (click)="toggleMenu()">Home</a>
+  </li>
+  <li>
+    <a class="navbar__link" routerLink="/aboutme" (click)="toggleMenu()"
+      >About me</a
+    >
+  </li>
+  <li>
+    <a class="navbar__link" routerLink="/myportfolio" (click)="toggleMenu()"
+      >Portfolio</a
+    >
+  </li>
+  <li>
+    <a class="navbar__link" routerLink="/myskills" (click)="toggleMenu()"
+      >Skills</a
+    >
+  </li>
+  <li>
+    <a class="navbar__link" routerLink="/contact" (click)="toggleMenu()"
+      >Contact</a
+    >
+  </li>
+</ul>
